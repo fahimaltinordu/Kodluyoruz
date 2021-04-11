@@ -63,6 +63,9 @@ body {
   margin-right: 0;
   font-size: 13px;
 }
+.help .div3 input {
+  height: 21px;
+}
 .help .div3 div button {
   padding: 1px 6px;
 }
