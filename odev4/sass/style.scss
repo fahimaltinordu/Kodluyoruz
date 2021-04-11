@@ -1,0 +1,22 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height:100vh;
+    background-color: #fff;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    padding: 20px 50px;
+}
+.input {
+    height:100px;
+    background-color: lightgray;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+}
