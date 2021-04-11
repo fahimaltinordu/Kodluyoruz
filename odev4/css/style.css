@@ -9,18 +9,66 @@ body {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 20px 50px;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 8px;
 }
 
 .input {
-  height: 100px;
-  background-color: lightgray;
+  width: 89%;
+  height: 62px;
+  background-color: #eeeeee;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+  margin-bottom: 2px;
+}
+.input input {
+  width: 309px;
+  height: 21px;
+  padding: 1px 2px;
+}
+.input .btn button {
+  padding: 1px 6px;
+}
+
+.divgenel, .help .div3, .help .div2, .help .div1 {
+  height: 100%;
+  margin-right: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.help {
+  width: 89%;
+  height: 76px;
+  display: flex;
+}
+.help .div1 {
+  background-color: #7ee5da;
+  width: 37%;
+  font-size: 16px;
+}
+.help .div2 {
+  background-color: #70ccc2;
+  width: 19%;
+  font-size: 13px;
+}
+.help .div3 {
+  background-color: #62b3aa;
+  width: 44%;
+  margin-right: 0;
+  font-size: 13px;
+}
+.help .div3 div button {
+  padding: 1px 6px;
+}
+.help + p {
+  font-size: small;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
