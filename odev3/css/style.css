@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@
 }
 
 body {
-  background-color: aquamarine;
+  background-color: #959695;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,14 +30,68 @@ header nav {
 header nav img {
   height: 50px;
 }
+header nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 header nav ul li a {
-  color: black;
+  color: white;
+  background-color: #7f3dfa;
+  width: 120px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-weight: 700;
 }
 header nav ul li a:not(:nth-of-type(3)) {
   margin-right: 20px;
 }
 header nav ul li a:hover {
   opacity: 0.7;
+}
+
+main {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  width: 90%;
+  height: 100vh;
+}
+main section {
+  width: 80%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+main aside {
+  width: 20%;
+  height: 300px;
+  background-color: burlywood;
+  overflow: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 20px 10px;
+}
+main aside h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+main aside ul li {
+  margin-bottom: 5px;
+}
+main aside ul li::before {
+  content: "»";
+  margin-right: 5px;
+}
+main aside ul li a {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
