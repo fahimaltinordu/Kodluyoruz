@@ -61,7 +61,6 @@ main {
   align-items: flex-start;
   gap: 10px;
   width: 90%;
-  height: 100vh;
 }
 main section {
   width: 80%;
@@ -69,29 +68,74 @@ main section {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+main section article h2 {
+  margin-bottom: 10px;
+}
+main section article p {
+  line-height: 30px;
+}
+main section article img {
+  display: block;
+  width: 70%;
+  margin: 20px auto;
 }
 main aside {
   width: 20%;
-  height: 300px;
+  height: 800px;
+}
+main aside .aside1, main aside .aside2 {
   background-color: burlywood;
-  overflow: auto;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
   padding: 20px 10px;
 }
-main aside h3 {
+main aside .aside1 h3, main aside .aside2 h3 {
   text-align: center;
   margin-bottom: 10px;
 }
-main aside ul li {
+main aside .aside1 ul li, main aside .aside2 ul li {
   margin-bottom: 5px;
 }
-main aside ul li::before {
+main aside .aside1 ul li::before, main aside .aside2 ul li::before {
   content: "»";
   margin-right: 5px;
 }
-main aside ul li a {
+main aside .aside1 ul li a, main aside .aside2 ul li a {
   color: white;
+}
+main aside .aside2 {
+  background-color: #85b306;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+footer nav {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #85b306;
+}
+footer nav .social {
+  margin-top: 10px;
+}
+footer nav .social a {
+  color: tomato;
+  font-weight: 700;
+}
+footer nav .social a:not(last-child) {
+  margin-right: 50px;
+}
+footer nav .social a:hover {
+  color: magenta;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -22,26 +22,65 @@
     </header>
     <main>
         <section>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
+            <article>
+                <h2>Static Random Image</h2>
+                <p>Get the same random image every time based on a seed, by adding /seed/{seed} to the start of the url.</p>
+                <img src="https://picsum.photos/seed/picsum/536/354" alt="">
+            </article>
+            <article>
+                <h2>Grayscale</h2>
+                <p>Get a grayscale image by appending ?grayscale to the end of the url.
+                </p>
+                <img src="https://picsum.photos/id/870/536/354?grayscale&blur=2" alt="">
+            </article>
+            <article>
+                <h2>Blur</h2>
+                <p>You can adjust the amount of blur by providing a number between 1 and 10.</p>
+                <img src="https://picsum.photos/id/1060/536/354?blur=2" alt="">
+            </article>
+            <article>
+                <h2>Advanced Usage</h2>
+                <p>To request multiple images of the same size in your browser, add the random query param to prevent the images from being cached:</p>
+                <img src="https://picsum.photos/id/1084/536/354?grayscale" alt="">
+            </article>
         </section>
         <aside>
-            <h3>FrontEnd Eğitimler</h3>
-            <ul>
-                <li><a href="#">Kodluyoruz Temel</a></li>
-                <li><a href="#">Kodluyoruz VScode</a></li>
-                <li><a href="#">Kodluyoruz GIT</a></li>
-                <li><a href="#">Kodluyoruz HTML</a></li>
-                <li><a href="#">Kodluyoruz CSS</a></li>
-                <li><a href="#">Kodluyoruz Bootstrap</a></li>
-                <li><a href="#">Kodluyoruz Javascript</a></li>
-            </ul>
+            <div class="aside1">
+                <h3>FrontEnd Eğitimler</h3>
+                <ul>
+                    <li><a href="#">Kodluyoruz Temel</a></li>
+                    <li><a href="#">Kodluyoruz VScode</a></li>
+                    <li><a href="#">Kodluyoruz GIT</a></li>
+                    <li><a href="#">Kodluyoruz HTML</a></li>
+                    <li><a href="#">Kodluyoruz CSS</a></li>
+                    <li><a href="#">Kodluyoruz Bootstrap</a></li>
+                    <li><a href="#">Kodluyoruz Javascript</a></li>
+                </ul>
+            </div>
+            <div class="aside2">
+                <h3>Veri Bilimi Patikası</h3>
+                <ul>
+                    <li><a href="#">Python Temel</a></li>
+                    <li><a href="#">Veri Bilimine Giriş</a></li>
+                    <li><a href="#">Temel Matematik</a></li>
+                    <li><a href="#">İleri Python</a></li>
+                    <li><a href="#">Python-Numpy</a></li>
+                    <li><a href="#">Veri Bilimi 101</a></li>
+                </ul>
+            </div>
         </aside>
-
     </main>
-    
+    <footer>
+        <nav>
+            <h3>Bizi takip edin</h3>
+            <div class="social">
+                <a href="#">Twitter</a>
+                <a href="#">Github</a>
+                <a href="#">Linkedin</a>
+                <a href="#">Telegram</a>
+            </div>
+        </nav>
+    </footer>
 
 </body>
 </html>
