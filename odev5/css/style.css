@@ -114,8 +114,72 @@ main {
     main .content-sol img {
       width: 97%; }
   main .banner {
-    width: 60%; }
+    width: 100%; }
     main .banner h2 {
+      width: 60%;
       margin-bottom: 35px;
       font-size: 25px;
       color: #212529; }
+    main .banner p {
+      font-size: 14px;
+      font-family: 'Open Sans', sans-serif;
+      margin-bottom: 75px; }
+  main .sponsor {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    gap: 40px; }
+    main .sponsor img {
+      width: 150px;
+      margin-bottom: 40px; }
+  main .subscribe {
+    max-width: 50%;
+    margin-top: 40px;
+    margin-right: auto; }
+    main .subscribe h2 {
+      font-size: 25px;
+      color: #212529;
+      margin-bottom: 25px; }
+    main .subscribe input {
+      border-radius: 4px;
+      border: 1px solid #ced4da;
+      outline: none;
+      width: 65%;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      transition: box-shadow 0.4s; }
+      main .subscribe input:focus {
+        border-color: #80bdff;
+        box-shadow: 0px 0px 0px 3.2px rgba(0, 123, 255, 0.25), 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+    main .subscribe a {
+      background-color: #454bff;
+      height: 38px;
+      width: 25%;
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      margin-left: 15px;
+      transition: background-color 0.3s; }
+      main .subscribe a:hover {
+        background-color: #0069d9; }
+  main .roadmap {
+    width: 100%;
+    margin-top: 50px;
+    display: flex; }
+    main .roadmap * {
+      font-family: 'Open Sans', sans-serif; }
+    main .roadmap-1 {
+      width: 25%;
+      text-align: center; }
+      main .roadmap-1:not(:nth-of-type(4)) {
+        margin-right: 20px; }
+      main .roadmap-1 img {
+        width: 50px;
+        height: 50px;
+        margin-top: 25px;
+        margin-bottom: 25px; }
