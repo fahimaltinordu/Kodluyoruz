@@ -70,13 +70,19 @@
                }
             }
          }
-         option {
-            display:inline-block;
-            color:#262626;
+         >a {
+            select {
+               border:none;
+               color:#262626;
+               font-size:16px;
+               cursor:pointer;
+               outline:0;
+               appearance: none;
+            }
             &::after {
                content: "▼";
-               margin-left: 5px;
-               color: #262626
+               margin-left: -35px;
+               color: #262626;
             }
          }
       }
@@ -341,6 +347,15 @@
        margin-bottom:1rem;
     }
  }
+ @media screen and (max-width:960px) {
+   header {
+      nav {
+         .nav-split {
+            display:none;
+         }
+      }
+   }
+}
  @media screen and (max-width:768px) {
    main {
       .subscribe {
