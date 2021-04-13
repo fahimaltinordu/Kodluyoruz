@@ -85,6 +85,40 @@
                color: #262626;
             }
          }
+         + .nav-menu {
+            display:none;
+            border:1px solid rgba(0,0,0,.1);
+            border-radius: .25rem;
+            padding: 1rem 1rem;
+            cursor:pointer;
+            span {
+               display:block;
+               width:25px;
+               height:2px;
+               background-color: rgba(0,0,0,.5);
+               position:relative;
+               &::after {
+                  content: '';
+                  display:block;
+                  position:absolute;
+                  top:-7px;
+                  left:0;
+                  background-color: rgba(0,0,0,.5);
+                  width:25px;
+                  height:2px;
+               }
+               &::before {
+                  content: '';
+                  display:block;
+                  position:absolute;
+                  top:7px;
+                  left:0;
+                  background-color: rgba(0,0,0,.5);
+                  width:25px;
+                  height:2px;
+               }
+            }
+         }
       }
     }
  }
@@ -347,11 +381,19 @@
        margin-bottom:1rem;
     }
  }
+
+
  @media screen and (max-width:960px) {
    header {
+      padding-left: 15px;
+      padding-right:15px;
       nav {
+         width:100%;
          .nav-split {
             display:none;
+            + .nav-menu {
+               display:block;
+            }
          }
       }
    }

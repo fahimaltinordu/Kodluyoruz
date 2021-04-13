@@ -70,6 +70,36 @@ header {
         content: "▼";
         margin-left: -35px;
         color: #262626; }
+      header nav .nav-split + .nav-menu {
+        display: none;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: .25rem;
+        padding: 1rem 1rem;
+        cursor: pointer; }
+        header nav .nav-split + .nav-menu span {
+          display: block;
+          width: 25px;
+          height: 2px;
+          background-color: rgba(0, 0, 0, 0.5);
+          position: relative; }
+          header nav .nav-split + .nav-menu span::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -7px;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 25px;
+            height: 2px; }
+          header nav .nav-split + .nav-menu span::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 7px;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 25px;
+            height: 2px; }
 
 .vh, main .content-sag, main .content-sol {
   width: 50%;
@@ -270,8 +300,15 @@ footer {
     margin-bottom: 1rem; }
 
 @media screen and (max-width: 960px) {
-  header nav .nav-split {
-    display: none; } }
+  header {
+    padding-left: 15px;
+    padding-right: 15px; }
+    header nav {
+      width: 100%; }
+      header nav .nav-split {
+        display: none; }
+        header nav .nav-split + .nav-menu {
+          display: block; } }
 
 @media screen and (max-width: 768px) {
   main .subscribe {
