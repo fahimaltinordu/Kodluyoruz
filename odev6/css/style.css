@@ -28,9 +28,17 @@
   top:1px;
   left:1px;
 }
+.pic.headerli + .headerli {
+  margin-left:8px;
+  margin-right:8px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:40px;
+  height:40px;
+}
 .pic.headerli + .headerli:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow:0 0 5px 3px rgba(0, 0, 0, 0.1);
+  background-color: rgba(60,64,67,0.08);
   border-radius:50%;
 }
 .headerli a {
