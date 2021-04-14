@@ -47,12 +47,11 @@
 
 .container {
   text-align: center;
-  /* margin: 100px; */
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .search-area {
-  width: auto;
+  width: 90%;
   max-width: 584px;
   margin-left:auto;
   margin-right:auto;
@@ -103,24 +102,39 @@
   border-color: rgba(223,225,229,0);
 }
 
-
-.googlesearch {
-  margin: 11px 4px;
-  padding: 0 16px;
-  line-height: 27px;
-  min-width: 54px;
-  text-align: center;
-  cursor: pointer;
-  user-select: none;
+.buttons {
+  width:90%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:40px;
+  margin-left:auto;
+  margin-right:auto;
 }
-
-.feelinglucky {
+.buttons a {
+  color: #3c4043;
+  font-size: 14px;
+  font-family: arial,sans-serif;
   padding: 0 16px;
-  line-height: 27px;
-  min-width: 54px;
-  text-align: center;
-  cursor: pointer;
-  user-select: none;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  display:inline-flex;
+  align-items:center;
+  justify-content: center;
+  height: 36px;
+}
+.buttons a:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+.buttons + p {
+  font-size: small;
+  margin-top: 24px;
+  text-align:center;
+  font-family: arial,sans-serif;
+  color: #222;
 }
 
 .footer {
