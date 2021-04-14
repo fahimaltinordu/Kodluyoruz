@@ -158,6 +158,9 @@ footer .footer-sol a:nth-of-type(4) {
 footer .footer-sag a:nth-of-type(3) {
   margin-right:0;
 }
+footer .footer-sag {
+  margin-left:90px;
+}
 footer a:hover {
   text-decoration: underline;
 }
@@ -171,18 +174,11 @@ footer .footer-orta img {
   margin-right:7px;
 }
 
-/* @media screen and  (max-width:768px) {
-  footer {
-    flex-direction:column;
-    gap:20px;
-    height:120px;
-    padding-top:10px;
-    padding-bottom:10px; 
+@media screen and  (max-width:700px) {
+  footer .footer-sag {
+    margin-left:0;
   }
-  footer .footer-orta {
-    order: -1;
-  }
-} */
+}
 
 @media screen and  (max-width:1200px) {
   footer {
