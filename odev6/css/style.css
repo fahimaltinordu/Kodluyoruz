@@ -163,7 +163,7 @@ footer .footer-orta img {
   margin-right:7px;
 }
 
-@media screen and  (max-width:768px) {
+/* @media screen and  (max-width:768px) {
   footer {
     flex-direction:column;
     gap:20px;
@@ -174,10 +174,11 @@ footer .footer-orta img {
   footer .footer-orta {
     order: -1;
   }
-}
+} */
 
 @media screen and  (max-width:1000px) {
   footer {
+    
     flex-wrap: wrap;
     justify-content: center;
     gap:20px;
@@ -186,7 +187,10 @@ footer .footer-orta img {
     padding-bottom:10px; 
   }
   footer .footer-orta {
-    order: -1;
+    order: -2;
+    width:100%;
   }
+
+
 }
 
