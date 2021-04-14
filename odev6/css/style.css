@@ -47,88 +47,62 @@
 
 .container {
   text-align: center;
-  margin: 100px;
+  /* margin: 100px; */
+  margin-bottom: 30px;
 }
 
 .search-area {
-  background: #fff;
-  display: flex;
-  border: 1px solid #dfe1e5;
-  box-shadow: none;
-  z-index: 3;
-  height: 44px;
-  margin: 0 auto;
-  margin-top: -77px;
-  width: 582px;
-}
-
-.search-area:hover {
-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
-}
-
-.search {
-  flex: 1;
-  display: flex;
-  padding: 5px 8px 0 16px;
-  padding-left: 14px;
-}
-
-.search-img {
-  display: flex;
+  width: auto;
+  max-width: 584px;
+  margin-left:auto;
+  margin-right:auto;
+  display:flex;
   align-items: center;
-  padding-right: 13px;
-  margin-top: -5px;
-}
-
-.search-img span {
-  color: #9aa0a6;
-  height: 20px;
-  width: 20px;
-  margin-top: 0px;
-  display: inline-block;
-  fill: currentColor;
-  line-height: 24px;
+  justify-content: center;
   position: relative;
 }
-
-.input-enter {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
+.search-area svg  {
+  position:absolute;
+  left:20px;
+  fill:gray;
+  width:19px;
+  height:19px;
+}
+.search-area svg + a {
+  margin-right:20px;
+  position:absolute;
+  right:40px;
+  background: url(//www.gstatic.com/inputtools/images/tia.png) no-repeat right;
+  height: 24px;
+  width: 24px;
+}
+.search-area a:nth-of-type(2) {
+  position:absolute;
+  right:20px;
+}
+.search-area a:nth-of-type(2) img {
+  width:25px;
 }
 
-.input-area {
-  color: transparent;
-  flex: 100%;
-  white-space: pre;
-  font: 16px arial, sans-serif;
-  line-height: 34px;
-  height: 34px !important;
-  display: block;
-}
-
-.input {
-  margin: 0;
-  padding: 0;
-  color: rgba(0, 0, 0, 0.87);
+.search-area input {
+  width:90%;
+  height: 44px;
+  color: rgba(0,0,0,.87);
   word-wrap: break-word;
   outline: none;
   display: flex;
   flex: 100%;
-  margin-top: -68px;
-  font: 16px arial, sans-serif;
-  line-height: 34px;
-  height: 34px !important;
-  text-rendering: auto;
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  text-align: start;
-  appearance: textfield;
-  cursor: text;
+  font-size: 16px;
+  border-radius: 24px;
+  border: 1px solid #dfe1e5;
+  padding-left:50px;
+  padding-right:140px;
 }
+.search-area input:hover {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223,225,229,0);
+}
+
 
 .googlesearch {
   margin: 11px 4px;
