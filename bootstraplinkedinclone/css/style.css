@@ -150,3 +150,31 @@ button.ref:hover {
   background-color: white !important;
   border-bottom: 1px solid rgba(0,0,0,.125);
 }
+.col-sm-12.col-md-8.col-lg-5.mb-3 .card .card-body input {
+  background-image: url("../assets/edit-regular.svg");
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+  background-size: 23px;
+}
+
+.col-sm-12.col-md-8.col-lg-5.mb-3 .card .card-body span button * {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+.col-sm-12.col-md-8.col-lg-5.mb-3 .card .card-body span:nth-of-type(1) button svg {
+  fill:#70B5F9;
+}
+.col-sm-12.col-md-8.col-lg-5.mb-3 .card .card-body span:nth-of-type(2) button svg {
+  fill:#7FC15E;
+}
+.col-sm-12.col-md-8.col-lg-5.mb-3 .card .card-body span:nth-of-type(3) button svg {
+  fill:#E7A33E;
+}
+.col-sm-12.col-md-8.col-lg-5.mb-3 .card .card-body span:nth-of-type(4) button svg {
+  fill:#F5987E ;
+}
+.btnsizetext {
+  font-size: 0.8rem;
+}
