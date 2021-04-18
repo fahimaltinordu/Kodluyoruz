@@ -52,8 +52,7 @@ input.empty {
   box-sizing: border-box;
 }
 body {
-  background-color: #f9f7f7;
-  background-color: rgba(250,250,250,250,250,250,1);
+  background-color: rgba(250,250,250);
 }
 .container {
   padding-left:100px;
@@ -84,9 +83,31 @@ nav {
   top:0;
   left:0;
 }
-.col-8 .card-body a{
+/* .col-8 .card-body a{
   display: inline-flex;
   flex-direction: column;
+} */
+.col-8 > .card > .card-body.carousel {
+  height:118px;
+  width:100%;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  align-items: center;
+  justify-content: flex-start;
+}
+.col-8 > .card > .card-body.carousel::-webkit-scrollbar {
+  display: none;
+}
+.col-8 > .card > .card-body.carousel a {
+  width:85px;
+  height:85px;
+  margin-right:15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .card {
   margin-bottom: 20px;
@@ -148,7 +169,7 @@ nav {
 
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1000px ) {
   .card.col-xs-12.rightpanel {
     display: none;
   }
@@ -161,7 +182,10 @@ nav {
     max-width: 100%;
   }
   nav .container .collapse.navbar-collapse {
-    display:none;
+    display:none !important;
+  }
+  nav .logo button {
+    display:block !important;
   }
   nav .logo {
     flex:1;
