@@ -138,3 +138,15 @@ button.ref:hover {
   position: sticky;
   top: 70px !important;
 }
+
+.card-footer {
+  padding: .75rem 1.25rem;
+  background-color: white !important;
+  border-top: 1px solid rgba(0,0,0,.125);
+}
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: white !important;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
